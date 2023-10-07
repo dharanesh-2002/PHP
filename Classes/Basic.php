@@ -2,9 +2,9 @@
 readonly class Circle
 {
     public int $radius;
-    public function __construct($radius)
+    public function __construct($rad)
     {
-        $this->radius = $radius;
+        $this->radius = $rad;
     }
     public function area()
     {
