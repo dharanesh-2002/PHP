@@ -55,6 +55,7 @@ class Cars extends Vehicles
         $this->body = $body;
         parent::display($this->vehicle, $this->maker, $this->model, $this->body);
     }
+    
 }
 class CoachVan extends Vehicles
 {

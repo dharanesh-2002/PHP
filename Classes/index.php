@@ -50,14 +50,29 @@ $accbalance = new AccountBalance ();
 $accbalance->getBalance();
 
 include_once 'Scope.php';
-$math = new AdvanceMathUtility(10,11,"Sub");
+//$math = new AdvanceMathUtility(10,11,"Sub");
 
 include_once 'Abstraction.php';
 $obj= new Expand();
-$obj->add(10,15);
+//$obj->add(10,15);
 
 $vehicle= new Cars();
-$vehicle->setInfo("Ford",2010);
+//$vehicle->setInfo("Ford",2010);
 
 $vehicle1 = new CoachVan();
-$vehicle1->setInfo("Tata 407",2015,2023);
+//$vehicle1->setInfo("Tata 407",2015,2023);
+
+include_once 'Interfaces.php';
+$int=new LoadData();
+$int->setData("Dharan",23,"Anthiyur");
+$int->getData();
+
+$int1=new VerifyData();
+$int1->setData("King",21,"Anthiyur");
+$int1->verify();
+$int1->setData("Don",23,"ERode");
+$int1->verify();
+
+$int2=new MultiTransport();
+$int2->startDriving();
+$int2->stopSail();
