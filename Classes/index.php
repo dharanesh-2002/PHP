@@ -64,15 +64,17 @@ $vehicle1 = new CoachVan();
 
 include_once 'Interfaces.php';
 $int=new LoadData();
-$int->setData("Dharan",23,"Anthiyur");
-$int->getData();
+// $int->setData("Dharan",23,"Anthiyur");
+// $int->getData();
 
 $int1=new VerifyData();
-$int1->setData("King",21,"Anthiyur");
-$int1->verify();
-$int1->setData("Don",23,"ERode");
-$int1->verify();
+// $int1->setData("King",21,"Anthiyur");
+// $int1->verify();
+// $int1->setData("Don",23,"ERode");
+// $int1->verify();
 
 $int2=new MultiTransport();
-$int2->startDriving();
-$int2->stopSail();
+// $int2->startDriving();
+// $int2->stopSail();
+
+include_once 'Traits.php';
