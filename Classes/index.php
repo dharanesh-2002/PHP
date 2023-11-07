@@ -43,38 +43,58 @@ $school = new School();
 //$obj->greeting();
 
 include_once 'Visibility.php';
-$verify = new Verification ("Dharan","Don@123");
+$verify = new Verification("Dharan", "Don@123");
 $verify->verify();
-$acc = new BankAccount(100,null);
-$accbalance = new AccountBalance ();
+$acc = new BankAccount(100, null);
+$accbalance = new AccountBalance();
 $accbalance->getBalance();
 
 include_once 'Scope.php';
 //$math = new AdvanceMathUtility(10,11,"Sub");
 
 include_once 'Abstraction.php';
-$obj= new Expand();
+$obj = new Expand();
 //$obj->add(10,15);
 
-$vehicle= new Cars();
+$vehicle = new Cars();
 //$vehicle->setInfo("Ford",2010);
 
 $vehicle1 = new CoachVan();
 //$vehicle1->setInfo("Tata 407",2015,2023);
 
 include_once 'Interfaces.php';
-$int=new LoadData();
+$int = new LoadData();
 // $int->setData("Dharan",23,"Anthiyur");
 // $int->getData();
 
-$int1=new VerifyData();
+$int1 = new VerifyData();
 // $int1->setData("King",21,"Anthiyur");
 // $int1->verify();
 // $int1->setData("Don",23,"ERode");
 // $int1->verify();
 
-$int2=new MultiTransport();
+$int2 = new MultiTransport();
 // $int2->startDriving();
 // $int2->stopSail();
 
 include_once 'Traits.php';
+$obj = new Users();
+$obj->log();
+$obj1 = new Product();
+$obj1->log();
+
+$obj2 = new ContentCreator();
+echo "Content Creator : <br>";
+$obj2->editContent();
+echo "<br> <br>";
+
+$obj3 = new ReviewContent();
+echo "Review Content : <br>";
+$obj3->reviewStart();
+
+$obj4 = new Buyer();
+$obj4->mobile();
+$obj4->laptop();
+
+$obj5=new DatabaseLogger();
+$obj5->log("Dharan");
